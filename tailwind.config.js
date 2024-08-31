@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      screens: {
+        lg : '1150px',
+        xl : '1150px',
+        '2xl' : '1150px'
+      },
     },
     extend: {
       fontFamily:{

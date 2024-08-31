@@ -13,11 +13,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!-- Google Fonts -->
   
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FontAwesome End -->
+
   <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1 class="text-3xl font-poppins text-tailflix-red">Hello world!</h1>
-  </div>
+
+<!-- Header Section -->
+<header class="bg-black py-12 text-tailflix-grey font-josefin uppercase">
+  <!-- Header Container -->
+   <div class="container flex items-center justify-between space-x-16">
+    <!-- Logo -->
+    <a href="#" class="text-6xl font-josefin lowercase text-transparent bg-gradient-to-r bg-clip-text from-tailflix-red  to-tailflix-white">tailflix</a>
+    <!-- Navigation Menu -->
+    <nav class="flex justify-between flex-1">
+      <!-- Menu -->
+       <div class="flex items-center text-lg space-x-8">
+        <a href="#" class="hover:text-tailflix-melon transition duration-500">movies</a>
+        <a href="#" class="hover:text-tailflix-melon transition duration-500">celebrites</a>
+        <a href="#" class="hover:text-tailflix-melon transition duration-500">blog</a>
+        <a href="#" class="hover:text-tailflix-melon transition duration-500">news</a>
+        <a href="#" class="hover:text-tailflix-melon transition duration-500">about</a>
+       </div>
+       <!-- Login Area -->
+        <div class="flex items-center space-x-8">
+          <!-- Search Area -->
+           <form>
+            <div class="group border-r px-4 mx-4 py-1 border-tailflix-red">
+              <input type="text" class="opacity-0 group-hover:opacity-100 transition duration-500 bg-transparent border-b border-tailflix-red focus:outline-none w-44">
+              <button class="-ml-4 group-hover:ml-0 transition duration-500"><i class="fas fa-search group-hover:text-tailflix-red transition duration-500"></i></button>
+            </div>
+           </form>
+           <!-- Signup Area -->
+            <div class="flex items-center space-x-8 text-lg">
+              <a href="#">Login</a>
+              <a href="#" class="bg-tailflix-red px-3 py-1 hover:bg-rose-600 hover:text-tailflix-grey cursor-pointer transition duration-500">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+   </div>
+</header>
+<!-- Header Section End -->
+
 </body>
 </html>
